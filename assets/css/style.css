@@ -1,0 +1,140 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+/* COLUMNA DE CONTACTOS */
+.contactos {
+  flex-basis: 20%;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+  padding-left: 3rem; /* ✅ Se añadió para desplazar todo un poco a la derecha */
+}
+
+/* BLOQUE DE USUARIO (MARÍA) */
+.usuario {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  gap: 1rem; /* Usamos gap en vez de space-between */
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.perfil img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-contacto strong {
+  font-size: 1rem;
+}
+
+.info-contacto small {
+  font-size: 0.75rem;
+  color: #888;
+}
+.iconos-usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+  font-size: 1.25rem;
+  padding-right: 1rem; /* ✅ Nuevo: espacio a la derecha de los iconos */
+}
+
+/* BOTÓN NUEVO CHAT */
+.nuevo-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.nuevo-chat button {
+  background-color: #b292dc;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* LISTA DE CONTACTOS */
+.lista-contactos {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.contacto img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contacto .info-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECCIÓN PRINCIPAL */
+.principal {
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.principal img {
+  width: 6rem; /* 🔧 Reducido desde 9.375rem para balance visual */
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.principal h1 {
+  margin-bottom: 0.5rem;
+}
